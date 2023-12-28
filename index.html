@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Assignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background: radial-gradient(red,darkred);
+            overflow: hidden;
+        }
+        .propsimg1{
+            position: absolute;
+            z-index: 1;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: display;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+        }
+        @keyframes display {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 100%;
+            }      
+        }
+        .propsimg2{
+            right: 0px;
+            position: absolute;
+            z-index: 1;
+            animation-name: display;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+        }
+        .text{
+            position: relative;
+            z-index: 1;
+            font-family: 'Mountains of Christmas', serif;
+            text-align: center;
+            /* background-color: blue; */
+            font-size: 3rem;
+            padding-top: 8rem;
+            color: white;
+        }
+        .text2{
+            position: relative;
+            z-index: 1;
+            font-family: 'Mountains of Christmas', serif;
+            text-align: center;
+            /* background-color: blue; */
+            font-size: 2.5rem;
+            padding-top: 0.5rem;
+            color: white;
+        }
+        .snow{
+            width: 100%;
+            bottom: 800px;
+            position: absolute;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: flakes;
+            animation-duration: 4s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes flakes {
+            0%{bottom: 800px;}
+            10%{bottom: 700px;}
+            20%{bottom: 600px;}
+            30%{bottom: 500px;}
+            40%{bottom: 400px;}
+            50%{bottom: 300px;}
+            60%{bottom: 200px;}
+            70%{bottom: 100px;}
+            80%{bottom: 50px;}
+            90%{bottom: -400px;}
+            100%{bottom: -700px;}
+        }
+        .snow2{
+            bottom: 800px;
+            position: absolute;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: flakes;
+            animation-duration: 8s;
+            animation-delay: 8s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .flake1{
+            position: absolute;
+            z-index: 5;
+            top: -100px;
+            left: 300px;
+            animation-name: fall;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes fall {
+            0%{top: -100px;}
+            10%{top: 100px;}
+            20%{top: 200px;}
+            30%{top: 300px;}
+            40%{top: 400px;}
+            50%{top: 500px;}
+            60%{top: 600px;}
+            70%{top: 700px;}
+            80%{top: 800px;}
+            90%{top: 900px;}
+            100%{top: 1000px;}
+        }
+        .flake2{
+            position: absolute;
+            z-index: 5;
+            right: 200px;
+            top: -100px;
+            animation-name: fall;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes fall {
+            0%{top: -100px;}
+            10%{top: 100px;}
+            20%{top: 200px;}
+            30%{top: 300px;}
+            40%{top: 400px;}
+            50%{top: 500px;}
+            60%{top: 600px;}
+            70%{top: 700px;}
+            80%{top: 800px;}
+            90%{top: 900px;}
+            100%{top: 1000px;}
+        }
+        
+
+        .flake3{
+            position: absolute;
+            z-index: 5;
+            right: 400px;
+            top: -100px;
+            animation-name: fall2;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes fall2 {
+            0%{top: -100px; rotate: 270deg;}
+            10%{top: 100px; rotate: 80deg;}
+            20%{top: 200px; rotate: 270deg;}
+            30%{top: 300px; rotate: 800deg;}
+            40%{top: 400px; rotate: 270deg;}
+            50%{top: 500px; rotate: 80deg;}
+            60%{top: 600px; rotate: 270deg;}
+            70%{top: 700px; rotate: 80deg;}
+            80%{top: 800px; rotate: 270deg;}
+            90%{top: 900px; rotate: 80deg;}
+            100%{top: 1000px; rotate: 270deg;}
+        }
+        .flake4{
+            position: absolute;
+            z-index: 5;
+            right: 800px;
+            top: -100px;
+            animation-name: fall;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .glow{
+            position: absolute;
+            z-index: 5;
+            right: 255px;
+            top: 120px;
+            animation-name: glowlight;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            opacity: 0%;
+        }
+        @keyframes glowlight {
+            0%{opacity: 0%;}
+            10%{opacity: 100%;}
+            20%{opacity: 0%;}
+            30%{opacity: 100%;}
+            40%{opacity: 0%;}
+            50%{opacity: 100%;}
+            60%{opacity: 0%;}
+            70%{opacity: 100%;}
+            80%{opacity: 0%;}
+            90%{opacity: 100%;}
+            100%{opacity: 0%;}
+        }
+
+        .glow2{
+            position: absolute;
+            z-index: 5;
+            left: 250px;
+            top: 120px;
+            animation-name: glowlight;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            opacity: 0%;
+        }
+        .music{
+            position: absolute;
+            z-index: 8;
+            bottom: 50px;
+        }
+
+        /* responsiveness */
+
+        @media screen and (max-width: 977px){
+        .text{
+            font-size: 2.5rem;
+            padding-top: 8rem;
+        }
+        .text2{
+            font-size: 2rem;
+            padding-top: 0.5rem;
+            color: white;
+        }
+        }
+
+        @media screen and (max-width: 867px) {
+        .propsimg1{
+            left: -70px;
+        }
+        .propsimg2{
+            right: -70px;
+        }
+        }
+
+        @media screen and (max-width: 821px) {
+            .flake4{
+            position: absolute;
+            z-index: 5;
+            right: 500px;
+            top: -100px;
+        }
+        }
+
+        @media screen and (max-width: 689px) {
+         .propsimg1{
+            left: -110px;
+        }
+        .propsimg2{
+            right: -110px;
+        }
+
+        .text{
+            font-size: 2rem;
+            padding-top: 8rem;
+        }
+        .text2{
+            font-size: 1.5rem;
+            padding-top: 0.5rem;
+            color: white;
+        }
+        }
+
+        @media screen and (max-width: 563px) {
+            .text2{
+            font-size: 1.5rem;
+            padding-top: 6rem;
+            color: white;
+             }
+        }
+
+        @media screen and (max-width: 459px) {
+         .propsimg1{
+            left: -150px;
+        }
+        .propsimg2{
+            right: -150px;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+
+<center>
+    <audio controls autoplay class="music">
+    <source src="Melissa_Lyons_Shauntia_Flemin_-_We_Wish_You_a_Merry_Christmas_(Jesusful.com).mp3">
+    </audio>
+</center>
+
+    <div class="glow2">
+        <img src="GLOW 1.png" alt="" height="100px">
+    </div>
+
+    <div class="glow">
+        <img src="GLOW 1.png" alt="" height="100px">
+    </div>
+
+    <div class="flake4">
+        <img src="SNOWFLA2.png" alt="" height="50px">
+    </div>
+
+    <div class="flake3">
+        <img src="SNOWFLA2.png" alt="" height="70px">
+    </div>
+
+    <div class="flake2">
+        <img src="SNOWFLA2.png" alt="" height="60px">
+    </div>
+
+    <div class="flake1">
+        <img src="SNOWFLA.png" alt="" height="80px">
+    </div>
+
+    <div class="snow2">
+        <img src="snow 35.png" alt="">
+    </div>
+
+    <div class="snow">
+        <img src="snow 35.png" alt="">
+    </div>
+    
+    <div class="props1">
+        <img src="props.png" alt="christmasprops" height="100%" width="auto" style="float: left;" class="propsimg1">
+        <img src="props 2.png" alt="christmasprops" height="100%" width="auto" style="float: right;" class="propsimg2">
+
+        <div class="text">
+            <h1>MERRY <br>CHRISTMAS</h1>
+        </div>
+
+        <div class="text2">
+            <h3>AND <br>HAPPY NEW YEAR</h3>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
